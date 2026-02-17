@@ -1,3 +1,176 @@
-#root{
+#root {
   text-align: center;
+}
+
+.mainDiv {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.login-container {
+  width: 100%;
+}
+.loginImg {
+  /* width: 100%; */
+  display: flex;
+  justify-content: start;
+}
+.mainDiv img {
+  width: 430px;
+  height: auto;
+}
+.form-container {
+  width: 100%;
+  border: 2px solid white;
+  background-color: #fff;
+  padding: 50px;
+  text-align: left;
+}
+.form-container h2 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 0;
+  color: #445863;
+}
+.description {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0px;
+  align-items: flex-start;
+  text-align: left;
+}
+label {
+  font-size: 14px;
+  color: rgb(68, 88, 99);
+  font-weight: 600;
+  margin-right: 8px;
+  float: left;
+}
+input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid ;
+  padding: 8px 16px;
+  margin-top: 2px;
+  box-sizing: border-box;
+  border-color: #445863;
+}
+input:focus{
+border-color: #445863;
+outline: none;
+}
+.lgn-btn {
+  width: 100%;
+  color: #fff;
+  background-color: #00a3a5;
+  padding: 8px;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+}
+.pwd-wrapper {
+  position: relative;
+}
+.pwd-wrapper input {
+  width: 100%;
+  padding-right: 35px;
+}
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 73%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.fgt-pwd {
+  float: right;
+  color: #00a3a5;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 6px 0px;
+}
+.fgt-pwd a{
+  text-decoration: none;
+  color: #00a3a5;
+}
+.signUP {
+  font-size: 12px;
+  float: left;
+}
+.signUP a {
+  color: #00a3a5;
+  text-decoration: none;
+}
+
+.fgt-container, .signUP-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Card, .signUP-Card {
+  width: 400px;
+  border: 2px solid white;
+  background-color: white;
+  padding: 50px;
+}
+.Card h2 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 0;
+  color: #445863;
+  margin-bottom: 20px;
+}
+.signUP-Card h1{
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 0;
+  color: #445863;
+  margin-bottom: 20px;
+  margin-bottom: 0px;
+}
+.Card button{
+  margin-top: 20px;
+}
+.showerror{
+  margin: 0px;
+  display: block;
+  text-align: left;
+  font-size: 10px;
+  color: red;
+}
+.hideError{
+  display: none;
+}
+.signUP-container .signUP-Card  label {
+  margin-top: 20px;
+}
+.signUP-container .signUP-Card  button {
+  margin-top: 20px;
+}
+.signUP-container .signUP-Card .eye{
+  top:78%
+}
+.password-rules {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
 }
